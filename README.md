@@ -1,5 +1,6 @@
 아래의 글은 유튜브 "조코딩"님의 강의를 바탕으로 정리한 글입니다.
-
+https://youtu.be/KL1MIuBfWe0
+https://wikidocs.net/book/1
 # 점프 투 파이썬 
 
 ## 1장. 파이썬이란 무엇인가?
