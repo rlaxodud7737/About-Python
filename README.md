@@ -72,6 +72,74 @@
     1.75  
     7//4  
     1
+### 문자열 자료형
+_따옴표로 둘러싸였으면 모두 문자열!_  
+문자열 자료형 예시
+```
+"Life is too shrot, You need Python."
+"a"
+"123"
+```
+#### 문자열을 만드는 4가지 방법
+1. 큰따옴표로 둘러싸기
+   ```
+   "Hello World"
+   ```
+2. 작은따옴표로 둘러싸기
+   ```
+   'Hello World'
+   ```
+3. 큰따옴표 3개를 연속으로 써서 둘러싸기
+   ```
+   """Hello World"""
+   ```
+4. 작은따옴표 3개를 연속으로 써서 둘러싸기
+   ```
+   '''Hello World'''
+   ```
+#### 문자열 안에 작은따옴표 or 큰따옴표를 포함시키고 싶을 때
+1. 문자열에 작은따옴표 포함하기
+   -> 큰 따옴표를 마진에
+   ```
+   ex) food = "Python's favorite food is perl"
+   ```
+2. 문자열에 큰따옴표 포함하기
+   -> 작은 따옴표를 마진에
+   ```
+   ex) say = '"Python is very easy." he says.'
+   ```
+3. 역슬래시 사용
+   ```
+   ex) food = 'Python\'s favorit food is perl'
+   ex) say = "\"Python is very easy.\" he says."
+   ```
+#### 문자열이 여러줄인 경우
+1. '\n' 사용
+   ```
+   ex) multiline = "Life is too short\nYou need python"
+   ```
+2. 작은 따옴표 3개 or 큰 따옴표 3개
+   ```
+   ex) multiline = '''  
+       Life is too short  
+       You need python  
+       '''
+   ```
+   ```
+   ex) multiline = """
+       Life is too short
+       You need python
+       """
+   ```
+
+print(multiline) 입력시
+```
+Life is too short
+You need python
+```
+   
+   
+
 
 
 
