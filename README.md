@@ -295,8 +295,26 @@ You need python
    day = "three"
    "I ate %d apples. so I was sick for %s days." %(number,day)
    --> I ate 10 apples. so i was sick for three days.
-   
-   
+   ```
+#### 문자열 포맷 코드
+|코드|설명|
+|:----|:--------------|
+|%s|문자열(string)|
+|%c|문자 1개(character)|
+|%d|정수(integer)|
+|%f|부동소수(floating-point)|
+|%o|8진수|
+|%x|16진수|
+|%%|Literal %(문자 % 자체)|
+
+여기서 '%s' 는 어떤 코드든 상관 없이 변환 가능하다.
+```
+"I have %s apples" % 3
+--> I have 3 apples.
+"rate is %s" % 3.234
+--> rate is 3.234
+```
+'%s' 는 자동으로 '%' 뒤에 있는 값(3 or 3.234) 를 문자열로 바꾸어 대입한다.
    
 
     
