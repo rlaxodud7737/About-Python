@@ -242,6 +242,59 @@ You need python
    --> 'You need'
    ```
    a[19:-7] 은 a[19]에서 a[-8] 까지를 의미한다.(a[-7]은 포함X)
+   ```
+   a = "20230331Rainy"
+   year = a[:4]
+   date = a[4:8]
+   weather = a[8:]
+   --> year = 2023
+   --> day = 0331
+   --> weather = Rainy
+   ```
+   **"Pithon" 문자열을 "Python" 으로 바꾸려면?**
+   잘못된 예시
+   ```
+   a = "Pithon"
+   a[1] = 'y'
+   ```
+   *문자열의 요솟값은 바꿀 수 없다!*
+   올바른 예시
+   ```
+   a = "Pithon"
+   new_a = a[:1] + 'y' + a[2:]
+   --> 'Python'
+   ```
+#### 문자열 포매팅
+   ```
+   "현재 온도는 18도 입니다."
+   "현재 온도는 20도 입니다."
+   ```
+   이처럼 문자열 안의 특정한 값을 바꿔야하는 경우가 있는데 이것을 가능케 하는것이
+   '문자열 포매팅' 이다. 문자열안에 어떤 값을 삽입하는 방법.  
+#### 문자열 포매팅 따라하기
+1. 숫자 바로 대입
+   ```
+   "I eat %d apples." %3
+   --> I eat 3 apples.
+   ```
+2. 문자열 바로 대입
+   ```
+   "I eat %s apples." % "five"
+   --> I eat five apples.
+   ```
+3. 숫자 값을 나타내는 변수로 대입
+   ```
+   number = 3
+   "I eat %d apples." % number
+   --> I eat 3 apples.
+   ```
+4. 2개 이상의 값 넣기
+   ```
+   number = 10
+   day = "three"
+   "I ate %d apples. so I was sick for %s days." %(number,day)
+   --> I ate 10 apples. so i was sick for three days.
+   
    
    
 
