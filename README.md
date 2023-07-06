@@ -134,9 +134,121 @@ _따옴표로 둘러싸였으면 모두 문자열!_
 
 print(multiline) 입력시
 ```
-Life is too short
+Life is too short  
 You need python
 ```
+#### 문자열 연산하기
+* 문자열 더해서 연결하기
+  ```
+  head ="Python"  
+  tail =" is fun!"  
+  total = head + tail  
+  print(total)  
+  --> Python is fun!
+  ```
+* 문자열 곱하기
+  ```
+  a = "python"  
+  print(a*2)  
+  --> pythonpython
+  ```
+* 문자열 곱하기 응용
+  ```
+  print("="*50)
+  print("My Program")
+  print("="*50)
+  -->
+  =================================================(50개)
+  My Program
+  =================================================(50개)
+  ```
+#### 문자열 길이 구하기
+  'len' 함수
+  ```
+  a = "Life is too short"
+  len(a)
+  -> 17
+  ```
+#### 문자열 인덱싱과 슬라이싱
+  * 문자열 인덱싱
+    ```
+    a = "Life is too short, You need Python"
+    ```
+    위 코드에서 변수 'a' 에 저장한 문자열의 각 문자마다 번호를 매겨보면 다음과 같다.
+    ![image](https://github.com/rlaxodud7737/About-Python/assets/129059558/0f2902d0-3c5b-4f1b-b32b-748f4288a117)
+    ```
+    a = "Life is too short, You need Python"
+    print(a[3])
+    --> e
+    ```
+    **"파이썬은 0부터 숫자를 센다."**
+  * 문자열 인덱싱 활용하기  
+    인덱스 중 '-1'은 '뒤'에서 첫 번째 문자의 인덱스 번호이다.  
+    _0 = -0_
+    ```
+    a = "Life is too short, You need Python"
+    print(a[0])
+    --> L
+    print(a[12])
+    --> s
+    print(a[-1])
+    --> n
+    ```
+ * 문자열 슬라이싱  
+   원초적인 방법
+   ```
+   a = "Life is too short, You need Python"
+   b = a[0] + a[1] + a[2] + a[3]
+   print(b)
+   --> Life
+   ```
+   슬라이싱 기법
+   ```
+   a = "Life is too short, You need Python"
+   print(a[0:4])
+   --> Life
+   ```
+   이 때, a[0:4] 의 의미는 다음과 같다.
+   ```
+   0 <= a < 4
+   ```
+   슬라이싱 기법 응용('print' 생략)
+   ```
+   a[0:5]
+   --> 'Life '
+   a[5:7]
+   --> 'is'
+   a[12:17]
+   --> 'short'
+   ```
+   끝번호 생략(시작번호 ~ 문자열 끝)
+   ```
+   a[19:]
+   --> 'You need Python'
+   ```
+   시작번호 생략(문자열 첨 ~ 끝 번호)
+   ```
+   a[:17]
+   --> 'Life is too short'
+   ```
+   시작번호, 끝 번호 생략(전체)
+   ```
+   a[:]
+   --> 'Life is too short, You need Python'
+   ```
+   -(빼기) 기호 사용
+   ```
+   a[19:-7]
+   --> 'You need'
+   ```
+   a[19:-7] 은 a[19]에서 a[-8] 까지를 의미한다.(a[-7]은 포함X)
+   
+   
+
+    
+  
+  
+
    
    
 
