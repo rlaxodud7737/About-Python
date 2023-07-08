@@ -331,7 +331,7 @@ ex) "%10s" % "hi"
 --> '          'hi'
 ```
 '%10s'는 전체 길이가 10개인 문자열 공간에서 대입되는 값을 오른쪽으로 정렬하고 그 앞의 나머지는 공백으로 남겨 두라는 의미이다.
-![image](https://github.com/rlaxodud7737/About-Python/assets/129059558/0179424e-e5de-420c-9de8-359a08cdd74b)
+![image](https://github.com/rlaxodud7737/About-Python/assets/129059558/0179424e-e5de-420c-9de8-359a08cdd74b)  
 왼쪽 정렬은 '%-10s' 이다
 ```
 ex) "%-10sjane." % 'hi'
@@ -339,6 +339,15 @@ ex) "%-10sjane." % 'hi'
 ```
 ![image](https://github.com/rlaxodud7737/About-Python/assets/129059558/abb4dfaa-4f87-4dbe-bd93-bc284057dbe0)
 ##### 소수점 표현하기
+```
+ex) "%0.4f" % 3.42134234
+--> '3.4213'
+```
+'%0.4f' = '%.4f'
+```
+ex) "%10.4f" % 3.41234234
+--> '          3.4213'
+```
 
    
 
